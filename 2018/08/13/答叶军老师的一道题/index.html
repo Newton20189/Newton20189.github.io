@@ -5,15 +5,20 @@
   
 
   
-  <title>Hexo</title>
+  <title>答叶军老师的一道题 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="叶军老师在彭翕成读者群提了一道题 $P$为$\triangle ABC$内一点，$AB\ne AC$且$\angle ABP=\angle ACP$ 证明或否定：$P$的轨迹是双曲线">
+<meta name="keywords" content="几何表达式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="答叶军老师的一道题">
+<meta property="og:url" content="http://yoursite.com/2018/08/13/答叶军老师的一道题/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="叶军老师在彭翕成读者群提了一道题 $P$为$\triangle ABC$内一点，$AB\ne AC$且$\angle ABP=\angle ACP$ 证明或否定：$P$的轨迹是双曲线">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-13T15:01:35.436Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="答叶军老师的一道题">
+<meta name="twitter:description" content="叶军老师在彭翕成读者群提了一道题 $P$为$\triangle ABC$内一点，$AB\ne AC$且$\angle ABP=\angle ACP$ 证明或否定：$P$的轨迹是双曲线">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +65,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-答叶军老师的一道题" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-答叶军老师的一道题" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/13/答叶军老师的一道题/" class="article-date">
   <time datetime="2018-08-13T15:01:35.152Z" itemprop="datePublished">2018-08-13</time>
@@ -79,8 +82,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/13/答叶军老师的一道题/">答叶军老师的一道题</a>
+    <h1 class="article-title" itemprop="name">
+      答叶军老师的一道题
     </h1>
   
 
@@ -91,11 +94,26 @@
         <p>叶军老师在彭翕成读者群提了一道题</p>
 <p>$P$为$\triangle ABC$内一点，$AB\ne AC$且$\angle ABP=\angle ACP$</p>
 <p>证明或否定：$P$的轨迹是双曲线</p>
-        
-          <p class="article-more-link">
-            <a href="/2018/08/13/答叶军老师的一道题/#more">Read More</a>
-          </p>
-        
+<a id="more"></a>
+<p>建系</p>
+<script type="math/tex; mode=display">B(0,0),A(u,v),C(t,0)</script><script type="math/tex; mode=display">l_{AB}: yu-x v=0</script><script type="math/tex; mode=display">l_{CA}:x v-t v+y (t-u)=0</script><p>$\because P\in \triangle ABC$</p>
+<p>$\therefore$一个顺时针转，一个逆时针，不妨<script type="math/tex">l_{AB}</script>逆时针，<script type="math/tex">l_{CA}</script>顺时针,设转角为$\alpha,\alpha \in [0,2\pi]$</p>
+<script type="math/tex; mode=display">l_{AB}':x (u \sin \alpha+v \cos \alpha)+y (v \sin \alpha-u \cos \alpha)=0</script><script type="math/tex; mode=display">l_{AC}':x (t \sin \alpha-u \sin \alpha+v \cos \alpha)+y (-v \sin \alpha+t \cos \alpha-u \cos \alpha)-t^{2} \sin \alpha+t u \sin \alpha-t v \cos \alpha=0</script><p>注意到$\cos \alpha,\sin \alpha$都是一次的</p>
+<script type="math/tex; mode=display">(-u x-v y)\sin \alpha+(u y-v x)\cos \alpha=0 \cdots1</script><script type="math/tex; mode=display">\left(t^2-t u-t x+u x+v y\right)\sin  \alpha+ (t v-t y+u y-v x)\cos \alpha=0 \cdots2</script><p>$l_{AB}’  \parallel   l_{AC}’$   ,交点不存在</p>
+<p>令$l_{AB}’  \parallel   l_{AC}’$,解下面方程，可得到解.</p>
+<script type="math/tex; mode=display">(-u \sin \alpha-v \cos \alpha) (-t \cos \alpha+u \cos \alpha+v \sin \alpha)=(u \cos \alpha-v \sin \alpha) (-t \sin \alpha+u \sin \alpha-v \cos \alpha)</script><p>整理得</p>
+<script type="math/tex; mode=display">\sin \alpha \cos \alpha \left(2 t u-2 u^2-2 v^2\right)-t v \sin ^2 \alpha+t v \cos ^2 \alpha =0</script><p>同除$\cos^2\alpha$,得到关于$\tan \alpha$的四次方程，根对应四个角，记为<script type="math/tex">\alpha _i,i=1,2,3,4</script></p>
+<p>$\alpha \ne \alpha _i,i=1,2,3,4 时, ​$ $1​$ 式 $2​$ 式等式两边都同除以 $\cos \alpha​$ , 将 $\tan \alpha ​$消掉，整理得下式</p>
+<script type="math/tex; mode=display">x y \left (-2 t u+2 u^{2}-2 v^{2}\right )+y \left (t^{2} u-t u^{2}+t v^{2}\right )+x^{2} (t v-2 u v)+y^{2} (-t v+2 u v)+x \left (-t^{2} v+2 t u v\right )=0</script><p>由圆锥曲线判别式</p>
+<script type="math/tex; mode=display">B^2-4AC=4 \left(u^2+v^2\right) \left((t-u)^2+v^2\right)>0</script><p>曲线为双曲线</p>
+<p>拓展：</p>
+<p>同为逆时针</p>
+<p>$l_{AB}’$不变</p>
+<script type="math/tex; mode=display">l_{AC}': x (t \sin \alpha-u \sin \alpha-v \cos \alpha)+y (-v \sin \alpha-t \cos \alpha+u \cos \alpha)-t^{2} \sin \alpha+t u \sin \alpha+t v \cos \alpha=0</script><p>同理可得</p>
+<script type="math/tex; mode=display">-x^{2} v-y^{2} v+x t v+y \left (-t u+u^{2}+v^{2}\right )=0</script><p>轨迹是圆</p>
+<hr>
+<p>后话：将解析交给叶军老师后，他将其放在了自己的QQ空间上。算是一种认可吧。</p>
+
       
     </div>
     <footer class="article-footer">
@@ -107,94 +125,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-post123" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/13/post123/" class="article-date">
-  <time datetime="2018-08-13T08:56:57.000Z" itemprop="datePublished">2018-08-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/13/post123/">post123</a>
-    </h1>
+    <a href="/2018/08/13/post123/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">post123</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今天是第一篇</p>
-<p>$f(x)$</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/13/post123/" data-id="cjkseq96o0004hwvsilwi0kz1" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/13/hello-world/" class="article-date">
-  <time datetime="2018-08-13T08:36:37.796Z" itemprop="datePublished">2018-08-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/13/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/13/hello-world/" data-id="cjkseq96k0001hwvsa1f54tmz" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
