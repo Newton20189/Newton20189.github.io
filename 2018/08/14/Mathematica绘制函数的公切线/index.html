@@ -5,15 +5,22 @@
   
 
   
-  <title>归档 | 123����</title>
+  <title>Mathematica绘制函数的公切线 | 123����</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="123����">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="一个无聊时的小作品.">
+<meta name="keywords" content="Mathematica">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mathematica绘制函数的公切线">
+<meta property="og:url" content="http://yoursite.com/2018/08/14/Mathematica绘制函数的公切线/index.html">
 <meta property="og:site_name" content="123����">
+<meta property="og:description" content="一个无聊时的小作品.">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2018/08/14/Mathematica绘制函数的公切线/1.jpg">
+<meta property="og:updated_time" content="2018-08-14T05:31:59.916Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="123����">
+<meta name="twitter:title" content="Mathematica绘制函数的公切线">
+<meta name="twitter:description" content="一个无聊时的小作品.">
+<meta name="twitter:image" content="http://yoursite.com/2018/08/14/Mathematica绘制函数的公切线/1.jpg">
   
     <link rel="alternate" href="/atom.xml" title="123����" type="application/atom+xml">
   
@@ -63,97 +70,62 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/08/14/Mathematica绘制函数的公切线/" class="archive-article-date">
-  <time datetime="2018-08-14T05:33:10.414Z" itemprop="datePublished">8月 14</time>
+        <section id="main"><article id="post-Mathematica绘制函数的公切线" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/14/Mathematica绘制函数的公切线/" class="article-date">
+  <time datetime="2018-08-14T05:33:10.414Z" itemprop="datePublished">2018-08-14</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/导数/">导数</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/14/Mathematica绘制函数的公切线/">Mathematica绘制函数的公切线</a>
+    <h1 class="article-title" itemprop="name">
+      Mathematica绘制函数的公切线
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/08/13/答叶军老师的一道题/" class="archive-article-date">
-  <time datetime="2018-08-13T15:01:35.152Z" itemprop="datePublished">8月 13</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/13/答叶军老师的一道题/">答叶军老师的一道题</a>
-    </h1>
-  
+        <p>一个无聊时的小作品.</p>
+<a id="more"></a>
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">f[x_] := <span class="keyword">Log</span>[x]; g[x_] := x^<span class="number">2</span>;<span class="comment">(*要作公切线的两个函数*)</span></span><br><span class="line">f1[x_] := f<span class="string">'[x]; g1[x_] := g'</span>[x];</span><br><span class="line">a = <span class="keyword">NSolve</span>[&#123;g1[x2] (x1 - x2) + g[x2] == f[x1], g[x2] == f1[x1] (x2 - x1) + f[x1], f1[x1] == g1[x2]&#125;, &#123;x1, x2&#125;,<span class="keyword">Reals</span>] // <span class="keyword">Union</span>;<span class="comment">(*两点确定一条直线,x=x1,x=x2*)</span></span><br><span class="line"><span class="keyword">Length</span>[a]<span class="comment">(*给出公切线条数*)</span></span><br><span class="line"><span class="keyword">Show</span>[<span class="keyword">Plot</span>[&#123;f1[x1] (x - x1) + f[x1] /. a, f[x], g[x]&#125;, &#123;x, -2, 5&#125;, <span class="keyword">PlotLegends</span> -&gt;&#123;"y=f(x)","y=g(x)","公切线"&#125;]<span class="comment">(*绘图*)</span>,<span class="keyword">ListPlot</span>[&#123;&#123;x1, f[x1]&#125; /. a, &#123;x2, g[x2]&#125; /. a&#125;]]<span class="comment">(*绘制切点*)</span></span><br></pre></td></tr></table></figure>
+<p>下图为$y=f(x)=x^2$和$y=g(x)=\ln x$的公切线</p>
+<p><img src="/2018/08/14/Mathematica绘制函数的公切线/1.jpg" alt=""></p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/08/13/post123/" class="archive-article-date">
-  <time datetime="2018-08-13T08:56:57.000Z" itemprop="datePublished">8月 13</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/13/post123/">post123</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/08/13/hello-world/" class="archive-article-date">
-  <time datetime="2018-08-13T08:36:37.796Z" itemprop="datePublished">8月 13</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/14/Mathematica绘制函数的公切线/" data-id="cjkt9whj5000550vspq87njd2" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/13/hello-world/">Hello World</a>
-    </h1>
-  
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mathematica/">Mathematica</a></li></ul>
 
-    </header>
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2018/08/13/答叶军老师的一道题/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">答叶军老师的一道题</div>
+    </a>
   
+</nav>
 
+  
+</article>
 
 </section>
         
@@ -258,6 +230,23 @@
 
 
 
-  </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  </div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 </body>
 </html>
